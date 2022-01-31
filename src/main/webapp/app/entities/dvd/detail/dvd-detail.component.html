@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="dvd">
+      <h2 data-cy="dvdDetailsHeading"><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.detail.title">Dvd</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ dvd.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.name">Name</span></dt>
+        <dd>
+          <span>{{ dvd.name }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.performer">Performer</span></dt>
+        <dd>
+          <span>{{ dvd.performer }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.releaseYear">Release Year</span></dt>
+        <dd>
+          <span>{{ dvd.releaseYear }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.discCount">Disc Count</span></dt>
+        <dd>
+          <span>{{ dvd.discCount }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.format">Format</span></dt>
+        <dd>
+          <span>{{ dvd.format }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.lang">Lang</span></dt>
+        <dd>
+          <span>{{ dvd.lang }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.state">State</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'jhipsterMonolitApplicationApp.State.' + dvd.state }}">{{ dvd.state }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterMonolitApplicationApp.dvd.added">Added</span></dt>
+        <dd>
+          <span>{{ dvd.added | formatMediumDatetime }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/dvd', dvd.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

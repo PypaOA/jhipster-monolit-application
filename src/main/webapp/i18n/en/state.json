@@ -1,0 +1,12 @@
+{
+  "jhipsterMonolitApplicationApp": {
+    "State": {
+      "null": "",
+      "OK": "OK",
+      "AWAY": "AWAY",
+      "LOST": "LOST",
+      "EXPECTED": "EXPECTED",
+      "UNDEFINED": "UNDEFINED"
+    }
+  }
+}

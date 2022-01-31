@@ -1,0 +1,31 @@
+{
+  "jhipsterMonolitApplicationApp": {
+    "dvd": {
+      "home": {
+        "title": "Dvds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Dvd",
+        "createOrEditLabel": "Створити чи редагувати Dvd",
+        "notFound": "No Dvds found"
+      },
+      "created": "Новий Dvd створений з ідентифікатором {{ param }}",
+      "updated": "Dvd оновлений з ідентифікатором {{ param }}",
+      "deleted": "Dvd видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Dvd {{ id }}?"
+      },
+      "detail": {
+        "title": "Dvd"
+      },
+      "id": "ID",
+      "name": "Name",
+      "performer": "Performer",
+      "releaseYear": "Release Year",
+      "discCount": "Disc Count",
+      "format": "Format",
+      "lang": "Lang",
+      "state": "State",
+      "added": "Added"
+    }
+  }
+}
